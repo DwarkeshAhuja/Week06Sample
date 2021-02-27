@@ -169,9 +169,12 @@ public class Student
     }
 
     public void calculatePercentage(){
-        if(totalMarks != 0.0){
-            float percent = totalMarks/marks.length;
-            setPercentage(percent);
+        if(totalMarks != 0.0 && marks.length != 0){
+            percentage = totalMarks/marks.length;
         }
+    }
+
+    public void calculateGrade(){
+
     }
 }
