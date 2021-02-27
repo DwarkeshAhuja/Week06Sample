@@ -159,4 +159,19 @@ public class Student
     private void setGrade(String grade) {
         this.grade = grade;
     }
+
+    public void calculateTotalMarks(){
+        float total = 0.0f;
+        for(int i = 0; i < marks.length; i ++){
+            total += marks[i];
+        }
+        setTotalMarks(total);
+    }
+
+    public void calculatePercentage(){
+        if(totalMarks != 0.0){
+            float percent = totalMarks/marks.length;
+            setPercentage(percent);
+        }
+    }
 }
