@@ -18,6 +18,7 @@ public class Week06InClass {
                 "String department",
                 dalveerMarks);
         dalveer.calculateTotalMarks();
+        dalveer.calculatePercentage();
         dalveer.calculateGrade();
         float[] dwarkeshMarks = {90,90,90,90,90};
         Student dwarkesh = new Student(789822,
@@ -33,6 +34,7 @@ public class Week06InClass {
                 "String department",
                 dwarkeshMarks);
         dwarkesh.calculateTotalMarks();
+        dwarkesh.calculatePercentage();
         dwarkesh.calculateGrade();
         System.out.println("Dalveer Grades: "+dalveer.getGrade());
         System.out.println("Dwarkesh Grades: "+dwarkesh.getGrade());
